@@ -8,11 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+
+    @IBOutlet var collView: UICollectionView!
+    
+    
+    var imgArr: [UIImage] = [
+        UIImage(named: "emoji.png")!,
+        UIImage(named: "emoji.png")!,
+        UIImage(named: "emoji.png")!,
+        UIImage(named: "emoji.png")!
+    ]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        collView.delegate = self
+        collView.dataSource = self
+        
+//        var myImage = UIImage(named: "emoji")
+//        var imgArr = [myImage,myImage,myImage,myImage]
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +38,27 @@ class ViewController: UIViewController {
     }
 
 
+     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        // 1
+        // Return the number of sections
+        return 1
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // 2
+        // Return the number of items in the section
+        return imgArr.count
+    }
+    
+
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+        cell.label.text = "hiii"
+        cell.imageView.image = imgArr[indexPath.row]
+
+        return cell
+    }
 }
 

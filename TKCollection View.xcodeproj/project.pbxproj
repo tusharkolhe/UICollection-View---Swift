@@ -12,6 +12,8 @@
 		714F41EA2112D516007AF052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714F41E82112D516007AF052 /* Main.storyboard */; };
 		714F41EC2112D516007AF052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714F41EB2112D516007AF052 /* Assets.xcassets */; };
 		714F41EF2112D516007AF052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714F41ED2112D516007AF052 /* LaunchScreen.storyboard */; };
+		714F41FD2112E468007AF052 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F41FC2112E468007AF052 /* CollectionViewCell.swift */; };
+		714F41FF2112E7F6007AF052 /* emoji.png in Resources */ = {isa = PBXBuildFile; fileRef = 714F41FE2112E7F6007AF052 /* emoji.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		714F41EB2112D516007AF052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		714F41EE2112D516007AF052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		714F41F02112D516007AF052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		714F41FC2112E468007AF052 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		714F41FE2112E7F6007AF052 /* emoji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				714F41E42112D516007AF052 /* AppDelegate.swift */,
 				714F41E62112D516007AF052 /* ViewController.swift */,
+				714F41FC2112E468007AF052 /* CollectionViewCell.swift */,
+				714F41FE2112E7F6007AF052 /* emoji.png */,
 				714F41E82112D516007AF052 /* Main.storyboard */,
 				714F41EB2112D516007AF052 /* Assets.xcassets */,
 				714F41ED2112D516007AF052 /* LaunchScreen.storyboard */,
@@ -123,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714F41FF2112E7F6007AF052 /* emoji.png in Resources */,
 				714F41EF2112D516007AF052 /* LaunchScreen.storyboard in Resources */,
 				714F41EC2112D516007AF052 /* Assets.xcassets in Resources */,
 				714F41EA2112D516007AF052 /* Main.storyboard in Resources */,
@@ -138,6 +145,7 @@
 			files = (
 				714F41E72112D516007AF052 /* ViewController.swift in Sources */,
 				714F41E52112D516007AF052 /* AppDelegate.swift in Sources */,
+				714F41FD2112E468007AF052 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
