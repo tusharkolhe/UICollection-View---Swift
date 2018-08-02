@@ -57,8 +57,18 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.label.text = "hiii"
         cell.imageView.image = imgArr[indexPath.row]
-
+        cell.imageView.layer.borderWidth = 1.0
+        cell.imageView.layer.masksToBounds = false
+//        cell.imageView.layer.borderColor = UIColor.white as? CGColor
+        cell.imageView.layer.cornerRadius = 100
+        cell.imageView.clipsToBounds = true
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        
+        let cell : UICollectionViewCell = collectionView.cellForItem(at: indexPath as IndexPath)!
+        cell.backgroundColor = UIColor.blue
+        print(indexPath.item)
     }
 }
 
